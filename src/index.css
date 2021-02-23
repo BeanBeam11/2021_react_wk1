@@ -1,13 +1,124 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* GLobal Style */
+html {
+	background-color: #ffffff;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,*:before,*:after {
+	box-sizing: inherit;
+}
+
+body{
+    min-width: 320px;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+	background-color: #FFF;
+}
+
+ /* Content Style */
+ .content_area {
+    margin-top: 50px;
+    width: 100vw;
+ }
+ .center {
+    right: 0;
+    left: 0;
+    margin: auto;
+ }
+ .bg_img {
+    position: absolute;
+    /* margin-top: 50px; */
+    width: 100vw;
+    height: 950px;
+    background-image: url(../img/role_katniss.png);
+    background-repeat: repeat;
+    background-size: 20vw auto;
+    opacity: 0.5;
+}
+.box_content{
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 950px;
+}
+.box_img_katniss_1{
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    margin-top: 45px;
+    /* margin-left: 20vw; */
+}
+.img_katniss_1 {
+    position: absolute;
+    width: 340px;
+    box-shadow: -2px -2px 8px 1px rgba(0, 0, 0, 0.5);
+}
+.box_katniss_explain{
+    position: absolute;
+    width: 520px;
+    height: 870px;
+    margin-top: 45px;
+    margin-left: 415px;
+}
+.img_bgi_black{
+    position: absolute;
+    box-shadow: -2px -2px 8px 1px rgba(0, 0, 0, 0.5);
+}
+.explain{
+    position: absolute;
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 400px;
+}
+.box_name{
+    position: absolute;
+    height: 60px;
+    margin-top: 50px;
+    font-size: 48px;
+}
+.box_quote{
+    position: absolute;
+    height: 85px;
+    margin-top: 152px;
+    font-size: 36px;
+}
+.box_quote_name{
+    position: absolute;
+    height: 20px;
+    margin-top: 250px;
+    font-size: 16px;
+}
+.box_word{
+    position: absolute;
+    height: 260px;
+    margin-top: 310px;
+    font-size: 24px;
+}
+.box_katniss_2{
+    position: absolute;
+    display: flex;
+    width: 400px;
+    margin-top: 500px;
+    /* margin-left: 20vw; */
+}
+.img_district_12{
+    width: 140px;
+    height: 180px;
+    /* box-shadow: -2px -2px 8px 1px rgba(0, 0, 0, 0.5); */
+}
+.img_district_12:hover{
+    opacity: 0.5;
+}
+.img_katniss_2{
+    margin-left: 10px;
+    width: 189px;
+    height: 270px;
+    box-shadow: -2px -2px 8px 1px rgba(0, 0, 0, 0.5);
 }
