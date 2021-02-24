@@ -1,7 +1,8 @@
+
 /* GLobal Style */
 html {
 	background-color: #ffffff;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,*:before,*:after {
@@ -9,9 +10,257 @@ html {
 }
 
 body{
-    min-width: 320px;
-    padding: 0;
-    margin: 0;
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+}
+/* Header Style */
+.header {
+	z-index: 1;
+	display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+	background-color: #212121;
+	height: 50px;
+	width: 100vw;
+	font-family: 'Roboto Mono', monospace, sans-serif;
+	font-size: 12.7px;
+  font-weight: 400;
+	overflow: hidden;
+	box-sizing: border-box;
+	outline: 1px solid #424242;
+}
+
+.logo_img{
+	position: relative;
+	width: 180px;
+	margin-left: 10vw;
+	margin-top: 10px;
+}
+
+
+/* Navitation Bar Style */
+.float-nav{
+  z-index: 1;
+	width: 100vw;
+	right: 10vw;
+	margin-left: 10vw;
+	display: block;
+}
+.nav_list {
+	position: absolute;
+  width: 60vw;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_list_item{
+	position: relative;
+	list-style: none;
+  width: 9vw;
+  height: 50px;
+	line-height: 20px;
+  text-align: center;
+  outline: 1px solid #424242;
+}
+.nav_list_item:hover{
+  background-color: #6e6e6e;
+}
+
+.icon_mockingjay{
+  position: absolute;
+  height: 20px;
+}
+.nav_span{
+  margin-left: 25px;
+}
+.nav_list_item_link{
+	display: block;
+	color: #8a8174;
+	text-decoration: none;
+	padding: 15px 0px;
+	border-bottom: none;
+}
+/* burger menu */
+.burger{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	right: 0;
+	display: none;
+}
+.icon_menu{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	right: 0;
+}
+/* iPad version RWD */
+@media screen and (max-width: 1024px) {
+	html{
+		font-size: 20px;
+		max-width: 100%;
+    }
+
+    /* Header area */
+    .logo{
+        position: absolute;
+        width: calc(100vw - 50px);
+        height: 50px;
+        left: 0;
+        top: 0;
+    }
+	.logo_img{
+		position: absolute;
+        /* left: 30vw; */
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+	}
+	.float-nav{
+        z-index: 1;
+		position: absolute;
+		width: 100vw;
+		/* height: calc(100vh - 50px); */
+		height: 300px;
+		top: 50px;
+		left: 0;
+		position: fixed;
+		background-color: #212121;
+		display: none;
+	}
+	.nav_list{
+		position: absolute;
+		display: block;
+		width: 100vw;
+		/* height: calc(100vh - 50px); */
+		height: 300px;
+	}
+	.nav_list_item{
+		/* position: absolute; */
+		width: 100vw;
+		height: 50px;
+	}
+	.burger{
+		display: block;
+	}
+	.menu-click{
+        margin: 0;
+		display: block;
+	}
+}
+@media screen and (max-width: 768px) {
+    /* Header area */
+    .logo{
+        position: absolute;
+        width: calc(100vw - 50px);
+        height: 50px;
+        left: 0;
+        top: 0;
+    }
+	.logo_img{
+		position: absolute;
+        /* left: 30vw; */
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+	}
+	.float-nav{
+        z-index: 1;
+		position: absolute;
+		width: 100vw;
+		/* height: calc(100vh - 50px); */
+		height: 300px;
+		top: 50px;
+		right: 0;
+		position: fixed;
+		background-color: #212121;
+		display: none;
+	}
+	.nav_list{
+		position: absolute;
+		display: block;
+		width: 100vw;
+		/* height: calc(100vh - 50px); */
+		height: 300px;
+	}
+	.nav_list_item{
+		/* position: absolute; */
+		width: 100vw;
+		height: 50px;
+	}
+	.menu-click{
+		display: block;
+	}
+}
+/* iPhone version RWD */
+@media screen and (max-width: 480px) {
+	html{
+		font-size: 10px;
+		max-width: 100%;
+	}
+	/* Header area */
+	.logo{
+        position: absolute;
+        width: calc(100vw - 50px);
+        height: 50px;
+        left: 0;
+        top: 0;
+    }
+	.logo_img{
+		position: absolute;
+        /* left: 30vw; */
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+	}
+	.float-nav{
+        z-index: 1;
+		position: absolute;
+		width: 100vw;
+		height: calc(100vh - 50px);
+		top: 50px;
+		right: 0;
+		position: fixed;
+		background-color: #212121;
+		display: none;
+	}
+	.nav_list{
+		position: absolute;
+		display: block;
+		width: 100vw;
+		height: calc(100vh - 50px);
+	}
+	.nav_list_item{
+		/* position: absolute; */
+		width: 100vw;
+		height: 50px;
+	}
+	.burger{
+		display: block;
+	}
+	.menu-click{
+		display: block;
+	}
+	.img_arrow_down{
+		width: 40px;
+	}
+	.img_arrow_top{
+		width: 40px;
+	}
+	.back_to_top{
+		margin-left: 48vw;
+		margin-top: 45px;
+	}
 }
 
 .container {
@@ -33,7 +282,7 @@ body{
     /* margin-top: 50px; */
     width: 100vw;
     height: 950px;
-    background-image: url(../img/role_katniss.png);
+    background-image: url(../src/role_katniss.png);
     background-repeat: repeat;
     background-size: 20vw auto;
     opacity: 0.5;
@@ -49,7 +298,7 @@ body{
     width: 400px;
     height: 550px;
     margin-top: 45px;
-    /* margin-left: 20vw; */
+    margin-left: 20vw;
 }
 .img_katniss_1 {
     position: absolute;
@@ -106,7 +355,7 @@ body{
     display: flex;
     width: 400px;
     margin-top: 500px;
-    /* margin-left: 20vw; */
+    margin-left: 20vw;
 }
 .img_district_12{
     width: 140px;
